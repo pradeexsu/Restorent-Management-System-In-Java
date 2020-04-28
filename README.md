@@ -1,8 +1,6 @@
 # Restorent-Management-System-In-Java
   ![](https://codenotfound.com/assets/images/logo/java-logo.png)
   
-Restorent Management System In Java
-
   # interface
 
   ![](https://github.com/sutharp777/Restorent-Management-System-In-Java/blob/master/output%20Screenshort/jo1.png)
