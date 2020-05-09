@@ -17,7 +17,7 @@ import java.util.*;
 //	e-mail  	 : sutharp777@gmail.com
 //	git-hub		 : "https://github.com/sutharp777/Restorent-Management-System-In-Java"
 //	submitted to : Shailja Sharma
-//
+
 //		concepts used
 //		1.  interface
 //		2.  overrding
