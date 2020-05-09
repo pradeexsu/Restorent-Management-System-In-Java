@@ -258,7 +258,8 @@ class Restorent implements Organization
 }
 
 class Test {
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 
 						// please avoid spelling mistake
 
@@ -272,7 +273,8 @@ class Test {
 		System.out.println(	space + "Enter The Details of Restorent");
 		Restorent lovely = new Restorent();
 		int choice = 0;
-		try{
+		try
+		{
 
 			System.out.println(	space + "[1]	Enter Available Dishes");
 			System.out.println(	space + "[2]	Default");
