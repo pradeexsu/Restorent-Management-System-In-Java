@@ -88,7 +88,8 @@ class Recipt
 		Float price = 0.0f;
 		Float final_price = 0.0f;
 		Float total = 0.0f;
-		for(String item : order.order_list.keySet()){
+		for(String item : order.order_list.keySet())
+		{
 			price = order.price_list.get(item);
 			item_count = order.order_list.get( item );
 			final_price = price*item_count;
@@ -146,7 +147,8 @@ class Restorent implements Organization
 		// sc.close();
 	}
 
-	void getMenu(){
+	void getMenu()
+	{
 
 		String space = "    ";
 		String endl = "\n";
