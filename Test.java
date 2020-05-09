@@ -12,22 +12,19 @@ import java.util.*;
   * Roll Number: 57
   **/
 
-/**
-	Name    	 : Pradeep Suthar
-	e-mail  	 : sutharp777@gmail.com
-	git-hub		 : "https://github.com/sutharp777/Restorent-Management-System-In-Java"
-	submitted to : Shailja Sharma
-*/
-
-	/*
-		concepts used
-		1.  interface
-		2.  overrding
-		3.  overloading
-		4.  Exceptional Handling 
-		5.  Polymorphism
-		6.  I/O Fundamentals
-	*/
+//
+//	Name    	 : Pradeep Suthar
+//	e-mail  	 : sutharp777@gmail.com
+//	git-hub		 : "https://github.com/sutharp777/Restorent-Management-System-In-Java"
+//	submitted to : Shailja Sharma
+//
+//		concepts used
+//		1.  interface
+//		2.  overrding
+//		3.  overloading
+//		4.  Exceptional Handling 
+//		5.  Polymorphism
+//		6.  I/O Fundamentals
 
 interface Organization {
 	void clearScreen();
@@ -56,7 +53,8 @@ class Order{
 	}
 }
 
-class Recipt{
+class Recipt
+{
 	boolean payed;	// false
 	Order order;
 	float bill_amount;
