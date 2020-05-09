@@ -160,7 +160,8 @@ class Restorent implements Organization
 		
 		index_to_item.clear();
 		
-		for (String item:price_list.keySet()) {
+		for (String item:price_list.keySet()) 
+		{
 		
 			price = price_list.get(item);
 			index_to_item.put( i, item);
@@ -170,14 +171,16 @@ class Restorent implements Organization
 	}
 
 	@Override
-	public void run(){
+	public void run()
+	{
 
 		boolean close = false;
 		String space = "\t\t";
 		Scanner sc = new Scanner(System.in);
 		TreeMap<String,Integer> input_list = null;
 
-		while(!close){
+		while(!close)
+		{
 
 			System.out.print("\n"+
 				space + "Select from following \n"+
@@ -188,7 +191,8 @@ class Restorent implements Organization
 
 			String select = sc.next();
 
-			switch(select){
+			switch(select)
+			{
 
 				case "1":
 					clearScreen();
