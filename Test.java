@@ -26,12 +26,14 @@ import java.util.*;
 //		5.  Polymorphism
 //		6.  I/O Fundamentals
 
-interface Organization {
+interface Organization 
+{
 	void clearScreen();
 	void run();
 }
 
-class Order{
+class Order
+{
 	int ordre_id;
 	LocalDateTime ordre_time;
 	static int id_series = 1100000;
@@ -39,7 +41,8 @@ class Order{
 	SortedMap <String, Integer> order_list;
 	SortedMap <String, Float> price_list;
 	
-	Order(SortedMap <String, Integer> list, SortedMap <String, Float> price_lists){
+	Order(SortedMap <String, Integer> list, SortedMap <String, Float> price_lists)
+	{
 
 		ordre_time = LocalDateTime.now();
 		ordre_id = id_series + id_count+1;
