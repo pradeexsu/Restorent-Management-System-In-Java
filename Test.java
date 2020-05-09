@@ -285,7 +285,8 @@ class Test {
 			list.put( "Itly", 40.0f );
 			list.put( "Roti", 50.0f );
 
-			switch(choice){
+			switch(choice)
+			{
 				case 1:
 					lovely.setMenu();
 					break;		
@@ -299,10 +300,12 @@ class Test {
 			lovely.run();
 		
 		}
-		catch(Exception e){
+		catch(Exception e)
+		{
 			System.out.println(e);
 		}
-		finally{
+		finally
+		{
 			System.out.println("thank you");
 		}
 	}
