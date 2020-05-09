@@ -144,7 +144,7 @@ class Restorent implements Organization
 
 		}
 
-		// sc.close();
+		// sc.close(); do not uncoment this line
 	}
 
 	void getMenu()
@@ -206,7 +206,7 @@ class Restorent implements Organization
 					input_list = new TreeMap<String,Integer>();
 
 					System.out.print("\nEnter Item Number And Quantity > ");
-					for(int i=0;i<n;i++)
+					for(int i=0; i<n; i++)
 					{
 						item_number = sc.nextInt();
 						item_quntity = sc.nextInt();
