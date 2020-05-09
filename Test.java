@@ -51,7 +51,8 @@ class Order
 		price_list = price_lists;
 	}
 
-	public String toString(){
+	public String toString()
+	{
 		return ""+ordre_id;
 	}
 }
@@ -61,23 +62,27 @@ class Recipt
 	boolean payed;	// false
 	Order order;
 	float bill_amount;
-	Recipt(Order order){
+	Recipt(Order order)
+	{
 		this.order = order;
 	}
 	public void pay(){
 		Scanner sc = new Scanner(System.in);
 		float bill = sc.nextFloat();
-		if(bill >= bill_amount){
+		if(bill >= bill_amount)
+		{
 			payed = true;
 			bill_amount = 0;
 		}
-		else{
+		else
+		{
 			System.out.println("plese give at least "+ bill_amount );
 		}
-		// sc.close();
+		// sc.close(); do not uncoment this
 	}
 
-	public String toString(){
+	public String toString()
+	{
 		String list = "\n";
 		int item_count = 0;
 		Float price = 0.0f;
