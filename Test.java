@@ -103,7 +103,8 @@ class Recipt
 
 }
 
-class Restorent implements Organization{
+class Restorent implements Organization
+{
 	SortedMap<String, Float> price_list = new TreeMap<String, Float>();
 	HashMap<Integer, String> index_to_item = new HashMap<Integer, String>();
 
@@ -115,11 +116,13 @@ class Restorent implements Organization{
 	}
 
 	// overloaded funciton
-	void setMenu(SortedMap<String, Float> list){
+	void setMenu(SortedMap<String, Float> list)
+	{
 		price_list = new TreeMap<String, Float> (list);
 	}
 
-	void setMenu(){
+	void setMenu()
+	{
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter Number Of Items in Menu > ");
 
@@ -131,7 +134,8 @@ class Restorent implements Organization{
 		String item_name = null;
 		Float item_prece = 0.0f;
 
-		for(int i=0;i<n;i++){
+		for(int i=0;i<n;i++)
+		{
 
 			item_name = sc.next();
 			item_prece = sc.nextFloat();
