@@ -5,16 +5,11 @@ import java.util.*;
   * In which you have to include at least three from the given topics as required: 
   * Inheritance, Overriding Methods, Polymorphism, Abstract Classes, Nested Classes, 
   * Interfaces, Lambda Expressions, Exceptional Handling and I/O Fundamentals. 
-  * Avoid copying from given solution on website. 
-  * Try to implement using the concept covered in the class. 
-  * Solution must be unique for each student.
-  * 
-  * Roll Number: 57
   **/
 
 //
 //	Name    	 : Pradeep Suthar
-//	e-mail  	 : sutharp777@gmail.com
+//      Roll Number      : 57
 //	git-hub		 : "https://github.com/sutharp777/Restorent-Management-System-In-Java"
 //	submitted to : Shailja Sharma
 
