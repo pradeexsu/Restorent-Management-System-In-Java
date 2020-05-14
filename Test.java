@@ -1,6 +1,5 @@
 import java.time.LocalDateTime;
 import java.util.*;
-
 /**
   * Q5: Write a java program to implement “Restaurant Management System”. 
   * In which you have to include at least three from the given topics as required: 
@@ -249,7 +248,8 @@ class Restorent implements Organization
 	}
 }
 
-class Test {
+class Test
+{
 	public static void main(String[] args) 
 	{
 
