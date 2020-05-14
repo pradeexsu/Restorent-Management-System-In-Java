@@ -84,6 +84,7 @@ class Recipt
 		Float price = 0.0f;
 		Float final_price = 0.0f;
 		Float total = 0.0f;
+		
 		for(String item : order.order_list.keySet())
 		{
 			price = order.price_list.get(item);
@@ -91,7 +92,8 @@ class Recipt
 			final_price = price*item_count;
 			total += final_price;
 			list += item+" > "+ item_count+" x "+ price +" : " +final_price+"\n"; 
-			}
+		}
+		
 		bill_amount = total;
 		return "Date and Time > " + order.ordre_time
 		+"\nOrdre id > "+order.ordre_id
@@ -131,7 +133,7 @@ class Restorent implements Organization
 		String item_name = null;
 		Float item_prece = 0.0f;
 
-		for(int i=0;i<n;i++)
+		for (int i=0; i<n; i++)
 		{
 
 			item_name = sc.next();
@@ -156,7 +158,7 @@ class Restorent implements Organization
 		
 		index_to_item.clear();
 		
-		for (String item:price_list.keySet()) 
+		for (String item: price_list.keySet()) 
 		{
 		
 			price = price_list.get(item);
@@ -173,12 +175,12 @@ class Restorent implements Organization
 		boolean close = false;
 		String space = "\t\t";
 		Scanner sc = new Scanner(System.in);
-		TreeMap<String,Integer> input_list = null;
+		TreeMap<String, Integer> input_list = null;
 
 		while(!close)
 		{
 
-			System.out.print("\n"+
+			System.out.print( "\n"+
 				space + "Select from following \n"+
 				space + "[1] press for Order\n"+
 				space + "[2] press for Dishes Menu\n"+
@@ -199,9 +201,9 @@ class Restorent implements Organization
 					int item_number = 0;
 					int item_quntity = 0;
 					String item_name = null;
-					input_list = new TreeMap<String,Integer>();
-
+					input_list = new TreeMap<String, Integer>();
 					System.out.print("\nEnter Item Number And Quantity > ");
+					
 					for(int i=0; i<n; i++)
 					{
 						item_number = sc.nextInt();
@@ -209,19 +211,16 @@ class Restorent implements Organization
 						item_name  = index_to_item.get( item_number );
 						input_list.put(item_name, item_quntity);
 						
-						}
+					}
 
-						Order order = new Order(input_list, price_list);
-
-						Recipt recipt = new Recipt(order);
-
-						System.out.println(recipt);
-
-						while(!recipt.payed){
-							recipt.pay();
+					Order order = new Order(input_list, price_list);
+					Recipt recipt = new Recipt(order);
+					System.out.println(recipt);
+					while (!recipt.payed)
+					{
+						recipt.pay();
 					}
 					System.out.println("Thank you for Come to Our Restorent");
-
 					break;
 
 				case "2":
@@ -232,7 +231,6 @@ class Restorent implements Organization
 				case "3":
 					System.out.println(space+"Application developed by Pradeep ");
 					System.out.println(space+"https://github.com/sutharp777/Restorent-Management-System-In-Java");
-
 					break;
 
 				case "4":
@@ -241,7 +239,6 @@ class Restorent implements Organization
 
 				default:
 					System.out.println("enter valid key ..");
-
 			}
 
 			System.out.print(space + "Press any key and enter to continue ... ");
@@ -249,9 +246,7 @@ class Restorent implements Organization
 			clearScreen();
 		}
 		// sc.close();
-
 	}
-
 }
 
 class Test {
