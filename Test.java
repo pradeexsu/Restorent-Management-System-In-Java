@@ -7,7 +7,6 @@ import java.util.*;
   * Interfaces, Lambda Expressions, Exceptional Handling and I/O Fundamentals. 
   **/
 
-//
 //	Name    	 : Pradeep Suthar
 //      Roll Number      : 57
 //	git-hub		 : "https://github.com/sutharp777/Restorent-Management-System-In-Java"
@@ -57,13 +56,16 @@ class Recipt
 	boolean payed;	// false
 	Order order;
 	float bill_amount;
+	
 	Recipt(Order order)
 	{
 		this.order = order;
 	}
-	public void pay(){
+	public void pay()
+	{
 		Scanner sc = new Scanner(System.in);
 		float bill = sc.nextFloat();
+		
 		if(bill >= bill_amount)
 		{
 			payed = true;
