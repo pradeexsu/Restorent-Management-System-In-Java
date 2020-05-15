@@ -66,7 +66,7 @@ class Recipt
 		Scanner sc = new Scanner(System.in);
 		float bill = sc.nextFloat();
 		
-		if(bill >= bill_amount)
+		if (bill >= bill_amount)
 		{
 			payed = true;
 			bill_amount = 0;
@@ -86,7 +86,7 @@ class Recipt
 		Float final_price = 0.0f;
 		Float total = 0.0f;
 		
-		for(String item : order.order_list.keySet())
+		for (String item: order.order_list.keySet())
 		{
 			price = order.price_list.get(item);
 			item_count = order.order_list.get( item );
@@ -163,7 +163,7 @@ class Restorent implements Organization
 		{
 		
 			price = price_list.get(item);
-			index_to_item.put( i, item);
+			index_to_item.put(i, item);
 			System.out.print(space+"["+i++ +"]"+ space + item + space + price + endl );
 		}
 
@@ -178,7 +178,7 @@ class Restorent implements Organization
 		Scanner sc = new Scanner(System.in);
 		TreeMap<String, Integer> input_list = null;
 
-		while(!close)
+		while (!close)
 		{
 
 			System.out.print( "\n"+
