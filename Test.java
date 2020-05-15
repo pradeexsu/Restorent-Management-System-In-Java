@@ -205,7 +205,7 @@ class Restorent implements Organization
 					input_list = new TreeMap<String, Integer>();
 					System.out.print("\nEnter Item Number And Quantity > ");
 					
-					for(int i=0; i<n; i++)
+					for (int i=0; i<n; i++)
 					{
 						item_number = sc.nextInt();
 						item_quntity = sc.nextInt();
@@ -217,27 +217,25 @@ class Restorent implements Organization
 					Order order = new Order(input_list, price_list);
 					Recipt recipt = new Recipt(order);
 					System.out.println(recipt);
+					
 					while (!recipt.payed)
 					{
 						recipt.pay();
 					}
+					
 					System.out.println("Thank you for Come to Our Restorent");
 					break;
-
 				case "2":
 					clearScreen();
 					getMenu();
 					break;
-
 				case "3":
 					System.out.println(space+"Application developed by Pradeep ");
 					System.out.println(space+"https://github.com/sutharp777/Restorent-Management-System-In-Java");
 					break;
-
 				case "4":
 					close = true;
 					break;
-
 				default:
 					System.out.println("enter valid key ..");
 			}
@@ -259,14 +257,15 @@ class Test
 
 		Scanner sc = new Scanner(System.in);
 		String space = "\t\t\t";
-		System.out.println(	space + "_______________________________\n");
-		System.out.println(	space + "Restorent Management System");
-		System.out.println(	space + "_______________________________");
-		System.out.println(	space + ": Developer    > Pradeep Suthar");
-		System.out.println(	space + ": Submitted To > Shailja Sharma\n");
-		System.out.println(	space + "Enter The Details of Restorent");
+		System.out.println(space + "_______________________________\n");
+		System.out.println(space + "Restorent Management System");
+		System.out.println(space + "_______________________________");
+		System.out.println(space + ": Developer    > Pradeep Suthar");
+		System.out.println(space + ": Submitted To > Shailja Sharma\n");
+		System.out.println(space + "Enter The Details of Restorent");
 		Restorent lovely = new Restorent();
 		int choice = 0;
+		
 		try
 		{
 
@@ -274,7 +273,9 @@ class Test
 			System.out.println(	space + "[2]	Default");
 			System.out.println(	space + " > ");
 			choice = sc.nextInt();
-			TreeMap<String,Float> list = new TreeMap<String, Float>();
+			
+			TreeMap<String, Float> list = new TreeMap<String, Float>();
+			
 			list.put( "Meal", 40.5f );
 			list.put( "Rice", 30.0f );
 			list.put( "Dosa", 40.0f );
